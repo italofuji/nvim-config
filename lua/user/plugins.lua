@@ -46,35 +46,40 @@ return packer.startup(function(use)
   use "nvim-lua/plenary.nvim" -- Useful lua functions used by lots of plugins
   use "lunarvim/darkplus.nvim" -- Color Scheme
   use 'kyazdani42/nvim-web-devicons'
-  use 'kyazdani42/nvim-tree.lua' 
+  use 'kyazdani42/nvim-tree.lua'
 
   -- Completions
   use "hrsh7th/nvim-cmp" -- completion plugin
   use "hrsh7th/cmp-buffer" -- buffer completions
   use "hrsh7th/cmp-path" -- path completions
   use "hrsh7th/cmp-cmdline" -- cmdline completions
+  use "hrsh7th/cmp-nvim-lsp" -- LSP completion
   use "saadparwaiz1/cmp_luasnip" -- snippet completions
 
   -- snippets
   use "L3MON4D3/LuaSnip" -- snippet engine
   use "rafamadriz/friendly-snippets" -- a bunch of snippets to use
-  
+
   -- Toggle Terminal
   use "akinsho/toggleterm.nvim"
-  
-  -- Telescope 
+
+  -- Telescope
   use 'nvim-telescope/telescope-media-files.nvim'
   use {
     'nvim-telescope/telescope.nvim',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = { { 'nvim-lua/plenary.nvim' } }
   }
-  
+
   -- Auto Pairs
   use "windwp/nvim-autopairs"
 
-  -- Bufferline 
+  -- Bufferline
   use "akinsho/bufferline.nvim"
-  use "moll/vim-bbye" -- Why ? 
+  use "moll/vim-bbye" -- Why ?
+
+  -- LSP
+  use "neovim/nvim-lspconfig" -- Collection of configurations for the built-in LSP client
+  use "williamboman/nvim-lsp-installer"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

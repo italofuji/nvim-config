@@ -8,4 +8,5 @@ require "user.toggle-terminal"
 require "user.telescope"
 require "user.auto-pairs"
 require "user.bufferline"
+require "user.lsp"
 
