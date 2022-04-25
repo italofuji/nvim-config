@@ -9,4 +9,5 @@ require "user.telescope"
 require "user.auto-pairs"
 require "user.bufferline"
 require "user.lsp"
+require "user.treesitter"
 
