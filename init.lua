@@ -11,4 +11,4 @@ require "user.bufferline"
 require "user.lsp"
 require "user.treesitter"
 require "user.gitsigns"
-
+require "user.statusline"
