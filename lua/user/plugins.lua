@@ -80,6 +80,7 @@ return packer.startup(function(use)
   -- LSP
   use "neovim/nvim-lspconfig" -- Collection of configurations for the built-in LSP client
   use "williamboman/nvim-lsp-installer"
+  use "jose-elias-alvarez/null-ls.nvim" -- for formatters and language servers
 
   -- TreeSitter
   use {
